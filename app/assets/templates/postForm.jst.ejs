@@ -1,0 +1,23 @@
+<% if (post) { %>
+  <h2>Edit</h2>
+<% } else { %>
+  <h2>New</h2>
+<% } %>
+
+<label>
+  Title
+  <input
+    type="text"
+    name="post[title]"
+    value="<%= post && post.escape('title')%>">
+</label>
+
+<label>
+  Body
+  <textarea
+    type="text"
+    name="post[body]">
+    <%= post && post.escape('body')%></textarea>
+</label>
+
+<input type="submit" value="Submit">
