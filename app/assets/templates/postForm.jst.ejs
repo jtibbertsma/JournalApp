@@ -1,9 +1,3 @@
-<% if (post) { %>
-  <h2>Edit</h2>
-<% } else { %>
-  <h2>New</h2>
-<% } %>
-
 <label>
   Title
   <input
@@ -16,8 +10,8 @@
   Body
   <textarea
     type="text"
-    name="post[body]">
-    <%= post && post.escape('body')%></textarea>
+    name="post[body]"
+  ><%= post && post.escape('body')%></textarea>
 </label>
 
 <input type="submit" value="Submit">

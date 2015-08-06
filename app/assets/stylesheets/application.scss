@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+ html {
+   font-family: helvetica;
+ }
+
+ h1 {
+   margin: 0 auto;
+   margin-left: 178px;
+   margin-bottom: 50px;
+   /*text-align: center;*/
+ }
+
+ .sidebar {
+   float: left;
+   margin-right: 50px;
+   width: 33%;
+ }
+
+ .main:after {
+   content: "";
+   clear: both;
+   display: block;
+ }
+
+ .content {
+   max-width: 600px;
+   float: left;
+   margin: 0 50px;
+ }
